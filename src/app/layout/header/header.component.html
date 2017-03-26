@@ -1,0 +1,34 @@
+<!--<div class="header" fxLayout="row" fxLayoutWrap fxLayoutAlign="center center">-->
+
+
+
+
+<div class="header-container header-layout-transparent">
+    <mdl-layout #mdlLayout1="mdlLayout">
+        <mdl-layout-header mdl-layout-header-transparent>
+            <mdl-layout-header-row>
+                <mdl-layout-title>Title</mdl-layout-title>
+                <mdl-layout-spacer></mdl-layout-spacer>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" [routerLink]="['/layout/l1']">Link 1</a>
+                    <a class="mdl-navigation__link" [routerLink]="['/layout/l2']">Link 2</a>
+                    <a class="mdl-navigation__link" [routerLink]="['/layout/l3']">Link 3</a>
+                </nav>
+            </mdl-layout-header-row>
+        </mdl-layout-header>
+        <mdl-layout-drawer>
+            <mdl-layout-title>Title</mdl-layout-title>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" [routerLink]="['/hello']" (click)="mdlLayout1.closeDrawer()">Link 1</a>
+                <a class="mdl-navigation__link" [routerLink]="['/other']" (click)="mdlLayout1.closeDrawer()">Link 2</a>
+                <a class="mdl-navigation__link" [routerLink]="['/layout/l3']" (click)="mdlLayout1.closeDrawer()">Link 3</a>
+            </nav>
+            <button mdl-button (click)="mdlLayout1.toggleDrawer()" mdl-button-type="raised" mdl-colored="primary">Toggle Drawer</button>
+        </mdl-layout-drawer>
+        <mdl-layout-content>
+            <router-outlet></router-outlet>
+        </mdl-layout-content>
+    </mdl-layout>
+</div>
+
+<!--</div>-->
