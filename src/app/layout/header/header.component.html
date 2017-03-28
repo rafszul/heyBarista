@@ -10,8 +10,8 @@
                 <mdl-layout-title>Title</mdl-layout-title>
                 <mdl-layout-spacer></mdl-layout-spacer>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" [routerLink]="['/layout/l1']">Link 1</a>
-                    <a class="mdl-navigation__link" [routerLink]="['/layout/l2']">Link 2</a>
+                    <a class="mdl-navigation__link" [routerLink]="['/hello']">Link 1</a>
+                    <a class="mdl-navigation__link" [routerLink]="['/other']">Link 2</a>
                     <a class="mdl-navigation__link" [routerLink]="['/layout/l3']">Link 3</a>
                 </nav>
             </mdl-layout-header-row>
@@ -26,7 +26,7 @@
             <button mdl-button (click)="mdlLayout1.toggleDrawer()" mdl-button-type="raised" mdl-colored="primary">Toggle Drawer</button>
         </mdl-layout-drawer>
         <mdl-layout-content>
-            <router-outlet></router-outlet>
+            <!--<router-outlet></router-outlet>-->
         </mdl-layout-content>
     </mdl-layout>
 </div>
