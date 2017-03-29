@@ -2,17 +2,18 @@ export class Member {
     id: number;
     img: string;
     imgsmall: string;
-    name: number;
+    name: string;
+    nick: string;
     firstname: string;
     lastname: string;
-    email: number;
+    email: string;
     phone: string;
     website: string;
-    twitter: number;
+    twitter: string;
     instagram: string;
     facebook: string;
     profession: string;
-    aboutshort: number;
+    aboutshort: string;
     about: string;
 }
 
