@@ -34,9 +34,7 @@ import { OtherComponent } from './other/other.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    //Material
     MaterialModule,
-    //Flex
     FlexLayoutModule,
     MdlModule,
     BrowserAnimationsModule,
